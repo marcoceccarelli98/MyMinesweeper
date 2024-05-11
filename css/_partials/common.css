@@ -38,8 +38,10 @@ main {}
     background-color: var(--grey);
     margin: auto;
     width: 90%;
+    min-width: 360px;
     /* max-width: 400px; */
-    padding: 20px 10px;
+    padding: 10px 10px;
+    transition: rotate 1s;
 }
 
 .game-container {
@@ -51,10 +53,12 @@ main {}
     /* Imposta le colonne della griglia */
     grid-gap: 0px;
     /* Imposta lo spazio tra i quadrati */
-    width: 90%;
+    /* width: 92%; */
+    max-width: 500px;
     /* Larghezza della griglia */
     margin: auto;
     /* Centra la griglia */
+    max-height: 900px;
 }
 
 .box {

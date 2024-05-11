@@ -11,12 +11,12 @@
     ----------*/
 
     .main-container {
-        width: 90%;
+        width: 70%;
         max-width: 700px;
     }
 
     .game-container {
-        /* width: 70%; */
+        width: 70%;
     }
 
 

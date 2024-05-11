@@ -10,11 +10,7 @@
     /*----------
        LAYOUT 
     ----------*/
-    .container {
-        width: 80%;
-        height: 90%;
-        margin: auto;
-    }
+
 
     /*----------
        HEADER 
@@ -42,8 +38,9 @@
     /*----------
        LAYOUT 
     ----------*/
-    .container {
-        max-width: 1140px;
+    .main-container {
+        rotate: -90deg;
+
     }
 
 }
