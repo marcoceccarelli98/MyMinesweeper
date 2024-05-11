@@ -1,0 +1,29 @@
+/*--- TABLET ---*/
+@media screen and (min-width: 768px) {
+
+    /* DEBUG */
+    .debug main::after {
+        content: 'TABLET';
+    }
+
+    /*----------
+       LAYOUT 
+    ----------*/
+
+    .main-container {
+        width: 90%;
+        max-width: 700px;
+    }
+
+    .game-container {
+        /* width: 70%; */
+    }
+
+
+    /*--------------------
+             MAIN
+    --------------------*/
+
+
+
+}

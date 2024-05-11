@@ -1,0 +1,82 @@
+/*----------
+    DEBUG
+ ----------*/
+
+.debug main::after {
+    content: 'MOBILE';
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+/*--------------------
+       COMMON
+--------------------*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: lightsalmon;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    height: 100vh;
+    background: var(--bg-grey);
+}
+
+main {}
+
+.main-container {
+    background-color: var(--grey);
+    margin: auto;
+    width: 90%;
+    /* max-width: 400px; */
+    padding: 20px 10px;
+}
+
+.game-container {
+    /* display: flex;
+    flex-wrap: wrap; */
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    /* Imposta le colonne della griglia */
+    grid-gap: 0px;
+    /* Imposta lo spazio tra i quadrati */
+    width: 90%;
+    /* Larghezza della griglia */
+    margin: auto;
+    /* Centra la griglia */
+}
+
+.box {
+    /* Square Proportion */
+    aspect-ratio: 1/1;
+    background-color: lightgrey;
+
+
+    /* IMG MINA */
+    /* background-image: url(../../img/mine.png);
+    background-repeat: no-repeat;
+    background-size: 25px; */
+    /* height: 5%;
+    width: 5%; */
+
+}
+
+.btn {
+    font-size: large;
+    padding: 10px 15px;
+    background-color: lightgray;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px black;
+}
