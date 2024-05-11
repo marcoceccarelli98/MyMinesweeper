@@ -3,5 +3,6 @@
 @import url('./_partials/utility.css');
 @import url('./_partials/variable.css');
 @import url('./_partials/common.css');
+@import url('./_partials/responsive-xs.css');
 @import url('./_partials/responsive-tablet.css');
 @import url('./_partials/responsive-desktop.css');

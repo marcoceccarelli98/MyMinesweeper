@@ -4,10 +4,10 @@
 
 const gameContainer = document.querySelector('.game-container');
 
-console.log(gameContainer);
-
 const row = 20;
 const col = 10;
+
+addGridTemplateCol(col);
 
 let mineField = [];
 
@@ -20,6 +20,18 @@ for (let i = 0; i < row; i++) {
         gameContainer.append(cell);
     }
 }
+
+
+//----------------------// 
+//                      //
+//      FUNCTIONS       //
+//                      //
+//----------------------//
+
+function addGridTemplateCol(col) {
+    gameContainer.setAttribute('style', 'grid-template-columns: repeat(' + col.toString() + ' , 1fr);');
+}
+
 
 
 

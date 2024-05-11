@@ -1,0 +1,24 @@
+@media screen and (max-height: 755px) {
+
+    /*----------
+       LAYOUT 
+    ----------*/
+
+    .game-container {
+
+        max-width: 260px;
+    }
+
+
+    .box {
+        max-width: 25px;
+    }
+
+
+    /*--------------------
+             MAIN
+    --------------------*/
+
+
+
+}
