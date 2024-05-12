@@ -16,22 +16,52 @@
        COMMON
 --------------------*/
 
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    background: var(--bg-grey);
+    overflow: hidden;
+}
+
+/* --------------- HEADER --------------- */
+
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 60px;
     background-color: lightsalmon;
 }
 
-body {
+nav {
+    width: 80%;
+    max-width: 800px;
     display: flex;
-    flex-direction: column;
-    height: 100vh;
-    background: var(--bg-grey);
-    overflow: hidden;
+    justify-content: space-between;
 }
 
+.btn {
+    font-size: large;
+    padding: 10px 15px;
+    margin: 0 20px;
+    background-color: lightgray;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px black;
+}
+
+#size-select {
+    font-size: large;
+    padding: 10px 15px;
+    margin: 0 20px;
+    background-color: lightgray;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px black;
+}
+
+/* --------------- GAME --------------- */
 .game-container {
     margin: auto;
     border: 5px solid var(--grey);
@@ -40,17 +70,13 @@ body {
     grid-gap: 0px;
     column-gap: 0;
     transition: rotate 1s;
-    width: 100%;
-    max-width: 360px;
-    /* max-height: 900px; */
 }
 
 .box {
     /* Square Proportion */
     aspect-ratio: 1/1;
-    max-width: 40px;
+    /* max-width: 40px; */
     background-color: lightgrey;
-
 
     /* IMG MINA */
     /* background-image: url(../../img/mine.png);
@@ -59,13 +85,4 @@ body {
     */
     /* height: 5%;
     width: 5%; */
-}
-
-.btn {
-    font-size: large;
-    padding: 10px 15px;
-    background-color: lightgray;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 1px 1px 1px black;
 }

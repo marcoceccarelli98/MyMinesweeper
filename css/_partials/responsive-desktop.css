@@ -10,7 +10,9 @@
     /*----------
        LAYOUT 
     ----------*/
-
+    nav {
+        justify-content: center;
+    }
 
     /*----------
        HEADER 

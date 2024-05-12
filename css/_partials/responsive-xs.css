@@ -4,14 +4,13 @@
        LAYOUT 
     ----------*/
 
-    .game-container {
-
-        max-width: 260px;
-    }
+    /* .game-container {
+        max-width: 310px; 
+    } */
 
 
     .box {
-        max-width: 25px;
+        max-width: 22px;
     }
 
 
