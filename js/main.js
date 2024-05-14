@@ -71,6 +71,7 @@ function iniBtnPlay() {
     const btnPlay = document.getElementById('play');
     btnPlay.addEventListener('click', function () {
         generateBoard();
+        newMineField();
     });
 }
 
@@ -109,7 +110,6 @@ function addGridTemplateCol() {
 
 function cellDim() {
     let attribute = '';
-    console.log(selectorSize.value);
     if (window.innerWidth <= 500) {
         attribute = `width : calc(100vw / ${col} - 2px)`;
         return attribute
@@ -141,11 +141,24 @@ function generateBoard() {
         for (let j = 0; j < col; j++) {
             const cell = document.createElement('button');
             cell.classList.add('box');
+            cell.dataset.row = `${i}`;
+            cell.dataset.col = `${j}`;
             resizeCells(cell, cellDim());
             gameContainer.append(cell);
         }
     }
-    console.log(window.innerWidth);
+    gameContainer.addEventListener('click', function (e) {
+        revealBox(e);
+
+    });
+}
+
+function revealBox(e) {
+    if (mineField[e.target.dataset.row][e.target.dataset.col]) {
+        console.log('Mine');
+    } else {
+        console.log('FREE');
+    }
 }
 
 //----------------
@@ -158,7 +171,7 @@ function newMineField() {
         mineField[i] = [];
         for (let j = 0; j < col; j++) {
             for (let c = 0; c < mines.length; c++) {
-                if (arraysAreEqual(mines[c], [i, j])) {
+                if (checkIfMine(mines[c], [i, j])) {
                     mineField[i][j] = 1;
                     break;
                 } else {
@@ -167,10 +180,6 @@ function newMineField() {
             }
         }
     }
-
-
-
-
 }
 
 function minesGenerator(minesNum) {
@@ -180,9 +189,12 @@ function minesGenerator(minesNum) {
     console.log(mines);
 }
 
-function arraysAreEqual(array1, array2) {
+function checkIfMine(array1, array2) {
     if (array1.length !== array2.length) {
         return false;
     }
     return array1.every((value, index) => value === array2[index]);
 }
+
+
+
