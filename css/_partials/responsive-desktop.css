@@ -14,6 +14,11 @@
         justify-content: center;
     }
 
+
+    /* .box {
+        width: calc(100vh / 25 - 10px);
+    } */
+
     /*----------
        HEADER 
     ----------*/
@@ -42,7 +47,10 @@
     ----------*/
     .game-container {
         rotate: -90deg;
-
     }
+
+    /* .box {
+        width: calc(100vh / 25 - 10px);
+    } */
 
 }
